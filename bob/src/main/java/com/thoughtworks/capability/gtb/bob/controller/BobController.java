@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @CrossOrigin
 public class BobController {
     @GetMapping("/hello")
-    public ResponseEntity<String> hello() {
-        return ResponseEntity.ok("Hello from Bob!");
+    public String hello() {
+        return "Hello from Bob!";
     }
 }
